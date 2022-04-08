@@ -1,0 +1,87 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;} 
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+p{
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+}
+
+#box {
+  /*width: 100%;*/
+  overflow: none;
+  background-color: lightslategray;
+  border: 1px solid black;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+#title {
+  position: relative;
+  top: -1px;
+  right: -1px;
+  width: 100px;
+  border: 1px solid black;
+  font-size: 125%;
+  float: right ;
+  text-align: center;
+}  
+#content {
+  background-color: lightslategray;
+  /*margin: 15px 15px 15px 15px;*/
+  padding: 5px 15px 5px 15px;
+  clear: right;
+}
+.t1 {
+  background-color: lightpink;
+}
+.t2{
+  background-color: lightcoral;
+}
+.t3{
+  background-color: lightyellow;
+}
+
+/* Simple Responsive Framework used as base. */
+/* Default view is mobile view */
+
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+  
+}
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+
+
